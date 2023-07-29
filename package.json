@@ -1,7 +1,7 @@
 {
-  "name": "react-native-oangia",
-  "version": "1.0.0",
-  "description": "",
+  "name": "@oangia/tothemoon",
+  "version": "1.0.2",
+  "description": "Basic components for my projects",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
