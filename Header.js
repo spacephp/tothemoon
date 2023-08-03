@@ -2,16 +2,12 @@ import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, Image } from 'react-native';
 
 const Header = (props) => {
-  const handleAvatarPress = () => {
-    // Add the code to handle avatar press if needed
-  };
-
   return (
     <View style={{...styles.container,backgroundColor:props.background}}>
       <View style={styles.appNameContainer}>
-        <Text style={styles.appNameText}>xMoney</Text>
+        <Text style={styles.appNameText}>{props.appName}</Text>
       </View>
-      <TouchableOpacity style={styles.avatarContainer} onPress={handleAvatarPress}>
+      <TouchableOpacity style={styles.avatarContainer} onPress={() => {props.avatarOnPress?props.avatarOnPress():""}}>
         <Image
           source={props.avatar} // Replace with your avatar image
           style={styles.avatarImage}

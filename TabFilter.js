@@ -71,7 +71,7 @@ const TabFilter = ({children, color}) => {
 
     return (
         <View>
-        <View style={{marginVertical: 20}}>
+        <View style={{marginVertical: 0}}>
             <CustomSwitch
             selectionMode={tabs[0].name}
             tabs={tabs}
