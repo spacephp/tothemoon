@@ -8,6 +8,7 @@ export default function HorizontalFlatlist({data, onPress}) {
           data={data}
           renderItem={({ item }) => (
             <TouchableOpacity
+              id={item}
               style={styles.tab(activeJobType, item)}
               onPress={() => {
                 setActiveJobType(item);

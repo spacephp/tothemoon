@@ -24,8 +24,9 @@ const CustomSwitch = ({
           flexDirection: 'row',
           justifyContent: 'center',
         }}>
-        {tabs.map((tab) => (
+        {tabs.map((tab, index) => (
             <TouchableOpacity
+                key={index + 1}
                 activeOpacity={1}
                 onPress={() => updateSwitchData(tab.name)}
                 style={{

@@ -1,6 +1,6 @@
 {
   "name": "@oangia/tothemoon",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "Basic components for my projects",
   "main": "index.js",
   "scripts": {
